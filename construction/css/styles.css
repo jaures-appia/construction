@@ -1,0 +1,340 @@
+/*###################
+STYLES DE ADMIN-MIESI
+####################*/
+
+/*###
+ LES COULEURS 
+
+jaune (700):#FBC02D
+jaune (500):#FFEB3B
+jaune (300):#FFF176
+jaune (A400):#FFEA00
+
+violet (700):#7B1FA2
+violet (500):#9C27B0
+violet (300):#BA68C8
+violet (A400):#D500F9
+
+gris (700):#616161
+gris (500):#9E9E9E
+gris (300):#E0E0E0
+gris (A400):#
+
+bleu gris (700):#455A64
+bleu gris (500):#607D8B
+bleu gris (300):#90A4AE
+bleu gris (A400):#
+
+
+ ###*/
+a{
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color: #455A64;
+}
+.bold{
+	font-weight: bold;
+}
+ *{
+ 	box-sizing: border-box;
+ }
+ @keyframes anime1{
+
+	1%{transform: scale(0.5); opacity: 0.5}
+	25%{transform: scale(0.6); opacity: 0.6}
+	50%{transform: scale(0.7); opacity: 0.7;}
+	75%{transform: scale(0.8); opacity: 0.8}
+	100%{transform: scale(0.9); opacity: 0.9;}
+}
+@-webkit-keyframes anime1{
+
+	1%{transform: scale(0.5); opacity: 0.5}
+	25%{transform: scale(0.6); opacity: 0.6}
+	50%{transform: scale(0.7); opacity: 0.7;}
+	75%{transform: scale(0.8); opacity: 0.8}
+	100%{transform: scale(0.9); opacity: 0.9;}
+}
+@-o-keyframes anime1{
+
+	1%{transform: scale(0.5); opacity: 0.5}
+	25%{transform: scale(0.6); opacity: 0.6}
+	50%{transform: scale(0.7); opacity: 0.7;}
+	75%{transform: scale(0.8); opacity: 0.8}
+	100%{transform: scale(0.9); opacity: 0.9;}
+}
+
+
+ @keyframes anime2{
+
+	0%{transform: rotateY(-50deg);}
+	25%{transform: rotateX(-80deg);}
+	50%{transform: rotateY(0deg);}
+	75%{transform: rotateX(0deg);}
+}
+
+@keyframes anime3{
+
+	0%{margin-right: -300px;}
+	/*25%{transform: rotateX(-80deg);}*/
+	50%{margin-right: 0px;}
+	/*75%{transform: rotateX(0deg);}*/
+}
+
+@keyframes anime4{
+
+	0%{margin-left: -300px;}
+	/*25%{transform: rotateX(-80deg);}*/
+	50%{margin-left: 0px;}
+	/*75%{transform: rotateX(0deg);}*/
+}
+/*@-webkit-keyframes anime2{
+
+	0%{transform: rotateY(180deg);}
+	25%{transform: rotateX(-100deg);}
+	50%{transform: rotateY(0deg);}
+	75%{transform: rotateX(0deg);}
+}
+@-o-keyframes anime2{
+
+	0%{transform: rotateY(180deg);}
+	25%{transform: rotateX(-100deg);}
+	50%{transform: rotateY(0deg);}
+	75%{transform: rotateX(0deg);}
+}*/
+
+/*##### PAGE D'ACCEUIL #####*/
+
+
+.page-acceuil {
+position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        height: 100%;
+    margin:0;
+    padding:0;
+    background-size: 100% ;
+    width:100%;  
+    color:black;
+}
+.page-acceuil:before {
+        content: "";
+        position: fixed;
+        height: 100%; width: 100%;
+        background: url(../images/acceuil.jpg);
+        background-size: cover;
+        z-index: -1; /* Keep the background behind the content */     
+        -webkit-filter: blur(3px);
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    }
+
+    .page-fournisseur {
+position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        height: 100%;
+    margin:0;
+    padding:0;
+    background-size: 100% ;
+    width:100%;  
+    color:black;
+}
+.page-fournisseur:before {
+        content: "";
+        position: fixed;
+        height: 100%; width: 100%;
+        background: url(../images/fournisseur-background.jpg);
+        background-size: cover;
+        z-index: -1; /* Keep the background behind the content */     
+        -webkit-filter: blur(3px);
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    }
+
+    .page-admin {
+position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        height: 100%;
+    margin:0;
+    padding:0;
+    background-size: 100% ;
+    width:100%;  
+    color:black;
+}
+.page-admin:before {
+        content: "";
+        position: fixed;
+        height: 100%; width: 100%;
+        background: url(../images/fond-admin.jpg);
+        background-size: cover;
+        z-index: -1; /* Keep the background behind the content */     
+        -webkit-filter: blur(3px);
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    }
+
+.mot-acceuil{
+	background-color: rgba(96, 125, 139, 0.8);
+}
+.index{
+	background-color: rgba(224, 224, 224, 0.5);
+	border-radius: 10px;
+
+}
+.logo{
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0px 0px 1px black;
+	
+}
+.big{
+	color: /*#455A64*/ blue;
+}
+.lei{
+	color: tomato;
+}
+.leh{
+	color: /*#616161*/ green;
+}
+.defile{
+	font-weight: bold;
+}
+.navbar .navbar-nav li a{
+	font-weight: bold;
+	transition: 0.5s;
+
+}
+.navbar .navbar-nav li a:hover{
+	color: #9E9E9E;
+	background-color: #607D8B;
+	border-radius: 0px 50px 50px 0px;
+	
+}
+.contact-acceuil{
+	background-image: url(../images/contact-acceuil.jpeg);
+	-webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+}
+.title-contact{
+	font-weight: bold;
+}
+.bordure{
+	width: 40px;
+	height: 5px;
+	background-color: #607D8B;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 10px;
+}
+.carte{
+	margin-right: auto;
+	margin-left: auto;
+}
+.mot-droite{
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+.mot-gauche{
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+.box1{
+	background-color: rgba(96, 125, 139, 0.8);
+	padding: 10px;
+}
+.box2{
+	background-color: rgba(224, 224, 224, 0.5);
+	padding: 60px;
+}
+.btn1{
+	background-color: #90A4AE;
+	font-weight: bold;
+}
+.btn1:hover{
+	background-color: #607D8B;
+	font-weight: bold;
+}
+
+
+
+/*##### DEVIS #####*/
+
+.box-devis{
+	background-image: url(../images/contact-acceuil.jpeg);
+	padding: 20px;
+}
+.title-devis{
+	font-size: 50px;
+}
+.label{
+	font-weight: bold;
+	color: #455A64;
+}
+
+
+/*##### FOURNISSEUR #####*/
+
+.box-fournisseur{
+	background-image: url(../images/contact-acceuil.jpeg);
+	padding: 20px;
+}
+.title-fournisseur{
+	font-size: 50px;
+}
+
+
+/*##### CLIENT #####*/
+
+.box-client{
+	background-image: url(../images/contact-acceuil.jpeg);
+	padding: 20px;
+}
+.title-client{
+	font-size: 50px;
+}
+.connexion-client{
+	margin-top: 15%;
+	margin-bottom: 5%;
+}
+.box-module{
+	
+}
+.module{
+	padding: 15px;
+	border-radius: 50px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+.client{
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+.size-1{
+	font-size: 14px;
+}
+.size-2{
+	font-size: 20px;
+}
+.size-3{
+	font-size: 25px;
+}
+.size-4{
+	font-size: 30px;
+}
+.size-5{
+	font-size: 40px;
+}
